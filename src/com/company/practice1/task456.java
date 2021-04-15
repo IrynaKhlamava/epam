@@ -7,8 +7,8 @@ public class task456 {
         //4. Дано действительное число R вида nnn.ddd (три цифровых разряда в дробной и целой частях).
         // Поменять местами дробную и целую части числа и вывести полученное значение числа.
         System.out.println("Enter the number R as nnn,ddd");
-        Scanner inputR = new Scanner(System.in);
-        double numR = inputR.nextDouble();
+        Scanner input = new Scanner(System.in);
+        double numR = input.nextDouble();
         double numReverse = (numR * 1000) % 1000 + (int) numR / 1000.0;
         System.out.println("Reverse R = " + numReverse);
         /*5. Дано натуральное число Т, которое представляет длительность прошедшего времени в секундах.
@@ -16,8 +16,7 @@ public class task456 {
         ННч ММмин SSc.*/
 
         System.out.println("Enter natural number T:");
-        Scanner inputT = new Scanner(System.in);
-        long t = inputT.nextLong();
+        long t = input.nextLong();
         long h, m, s;
         if (t >= 3600) {
             h = t / 3600;
@@ -34,11 +33,9 @@ public class task456 {
          */
 
         System.out.println("Enter coordinate X:");
-        Scanner inputX = new Scanner(System.in);
-        int x = inputX.nextInt();
+        int x = input.nextInt();
         System.out.println("Enter coordinate Y:");
-        Scanner inputY = new Scanner(System.in);
-        int y = inputY.nextInt();
+        int y = input.nextInt();
         if ((x >= -4 && x <= 4 && y >= -3 && y <= 0) || (y > 0 && x >= -2 && x <= 2)) {
             System.out.println("true");
         } else System.out.println("false");

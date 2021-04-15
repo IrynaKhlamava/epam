@@ -6,15 +6,14 @@ public class task123 {
     public static void main(String[] args) {
         // 1. Найдите значение функции: z = ( (a – 3 ) * b / 2) + c.
 
-        System.out.println("Enter a value a");
-        Scanner inputA = new Scanner(System.in);
-        double a = inputA.nextDouble();
-        System.out.println("Enter a value b");
-        Scanner inputB = new Scanner(System.in);
-        double b = inputB.nextDouble();
-        System.out.println("Enter a value c");
-        Scanner inputC = new Scanner(System.in);
-        double c = inputC.nextDouble();
+        System.out.println("Enter value a");
+        Scanner input = new Scanner(System.in);
+        double a = input.nextDouble();
+        System.out.println("Enter value b");
+
+        double b = input.nextDouble();
+        System.out.println("Enter value c");
+        double c = input.nextDouble();
         double z = ((a - 3) * b / 2) + c;
         System.out.println("Value function z = ( (a – 3 ) * b / 2) + c = " + z);
 
