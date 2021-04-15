@@ -9,11 +9,10 @@ public class taskBranches12345 {
 
          */
         System.out.println("Enter first corner:");
-        Scanner first = new Scanner(System.in);
-        int cornerFirst = first.nextInt();
+        Scanner input = new Scanner(System.in);
+        int cornerFirst = input.nextInt();
         System.out.println("Enter second corner:");
-        Scanner second = new Scanner(System.in);
-        int cornerSecond = second.nextInt();
+        int cornerSecond = input.nextInt();
         if (cornerFirst == 90 || cornerSecond == 90 || cornerFirst + cornerSecond == 90){
             System.out.println("Triangle is rectangular");
         } else if((cornerFirst > 0) && (cornerSecond > 0) &&(cornerFirst + cornerSecond < 180)) {
@@ -23,18 +22,14 @@ public class taskBranches12345 {
         }
     /*2. Найти max{min(a, b), min(c, d)}.*/
         System.out.println("Enter number a:");
-    Scanner inputMinA = new Scanner(System.in);
-    int minA = inputMinA.nextInt();
+    int minA = input.nextInt();
         System.out.println("Enter number b:");
-    Scanner inputMinB = new Scanner(System.in);
-    int minB = inputMinB.nextInt();
+    int minB = input.nextInt();
     int minAb = minA < minB ? minA : minB;
         System.out.println("Enter number c:");
-    Scanner inputMinC = new Scanner(System.in);
-    int minC = inputMinA.nextInt();
+    int minC = input.nextInt();
         System.out.println("Enter number D:");
-    Scanner inputMinD = new Scanner(System.in);
-    int minD = inputMinA.nextInt();
+    int minD = input.nextInt();
     int minCD = minC < minD ? minC : minD;
     int max = minAb > minCD ? minAb : minCD;
         System.out.println("max{min("+ minA+", "+minB+"), min("+minC+", "+minD+")}="+max);
