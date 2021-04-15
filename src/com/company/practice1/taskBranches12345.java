@@ -8,7 +8,7 @@ public class taskBranches12345 {
                 и если да, то будет ли он прямоугольным.
 
          */
-/*        System.out.println("Enter first corner:");
+        System.out.println("Enter first corner:");
         Scanner first = new Scanner(System.in);
         int cornerFirst = first.nextInt();
         System.out.println("Enter second corner:");
@@ -22,7 +22,7 @@ public class taskBranches12345 {
             System.out.println("Triangle doesn't exist");
         }
     /*2. Найти max{min(a, b), min(c, d)}.*/
- /*       System.out.println("Enter number a:");
+        System.out.println("Enter number a:");
     Scanner inputMinA = new Scanner(System.in);
     int minA = inputMinA.nextInt();
         System.out.println("Enter number b:");
