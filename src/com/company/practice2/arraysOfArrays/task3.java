@@ -6,7 +6,6 @@ public class task3 {
     /*
         3. Дана матрица. Вывести k-ю строку и p-й столбец матрицы.
      */
-
     public static void main(String[] args) {
         System.out.println("Enter matrix's size:");
         Scanner input = new Scanner(System.in);
