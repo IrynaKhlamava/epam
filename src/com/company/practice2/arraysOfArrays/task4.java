@@ -20,11 +20,6 @@ public class task4 {
         int[][] matrix = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                matrix[i][j] = (int) (Math.random() * 100 - 50);
-            }
-        }
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
                 if (i % 2 == 0) {
                     matrix[i][j] = elementMatrix++;
                 } else {
