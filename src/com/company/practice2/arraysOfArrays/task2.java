@@ -3,9 +3,11 @@ package com.company.practice2.arraysOfArrays;
 import java.util.Scanner;
 
 public class task2 {
+
     /*
     2. Дана квадратная матрица. Вывести на экран элементы, стоящие на диагонали.
      */
+
     public static void main(String[] args) {
         System.out.println("Enter matrix's size:");
         Scanner input = new Scanner(System.in);
