@@ -6,6 +6,7 @@ public class task7 {
     /*
     7. Сформировать квадратную матрицу порядка N по правилу:
     a[i][j] = sin ((i2 - j2)/n)
+
      */
     public static void main(String[] args) {
         System.out.println("Enter matrix's size:");
