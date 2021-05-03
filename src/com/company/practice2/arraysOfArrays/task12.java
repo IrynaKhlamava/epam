@@ -31,7 +31,6 @@ public class task12 {
                         tempElement = matrix[i][j];
                         matrix[i][j] = matrix[i][k];
                         matrix[i][k] = tempElement;
-
                     }
                 }
             }
