@@ -30,9 +30,6 @@ public class task5 {
                 for (j = 0; j < n - i; j++) {
                     matrix[i][j] = i + 1;
                 }
-                for (int k = n - i; k < n; k++) {
-                    matrix[i][j] = 0;
-                }
             }
             System.out.println();
         }
