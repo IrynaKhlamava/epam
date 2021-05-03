@@ -18,22 +18,17 @@ public class task5 {
         int n = input.nextInt();
         int[][] matrix = new int[n][n];
         int i = 0, j = 0;
-        if( i==0 ) {
-            for (i = 0; i < 1; i++) {
+        for (i = 0; i < 1; i++) {
                 for (j = 0; j < n; j++) {
                     matrix[i][j] = i+1;
                 }
-            }
         }
-        if ( i > 0) {
-            for (i = 1; i < n; i++) {
+        for (i = 1; i < n; i++) {
                 for (j = 0; j < n - i; j++) {
                     matrix[i][j] = i + 1;
                 }
-            }
-            System.out.println();
         }
-        System.out.println("Matrix:");
+        System.out.println("\nMatrix:");
         for (i = 0; i < n; i++) {
             for (j = 0; j < n; j++) {
                 System.out.print(matrix[i][j] + " ");
