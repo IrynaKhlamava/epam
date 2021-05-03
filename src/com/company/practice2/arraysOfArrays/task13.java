@@ -2,12 +2,12 @@ package com.company.practice2.arraysOfArrays;
 
 import java.util.Scanner;
 
-public class task12 {
+public class task13 {
     /*
-12. Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
+    13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
      */
     public static void main(String[] args) {
-        int tempElement = 0;
+        int tempElement;
         System.out.println("Enter size matrix");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -26,16 +26,16 @@ public class task12 {
         }
         for(int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                for (int k = j + 1; k < n; k++) {
-                    if (matrix[i][j] > matrix[i][k]) {
+                for (int k = i + 1; k < n; k++) {
+                    if (matrix[i][j] > matrix[k][j]) {
                         tempElement = matrix[i][j];
-                        matrix[i][j] = matrix[i][k];
-                        matrix[i][k] = tempElement;
+                        matrix[i][j] = matrix[k][j];
+                        matrix[k][j] = tempElement;
                     }
                 }
             }
         }
-        System.out.println("Matrix rows were sorted in ascending order");
+        System.out.println("Matrix column were sorted in ascending order");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(matrix[i][j] + " ");
@@ -44,17 +44,17 @@ public class task12 {
         }
         for(int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                for (int k = j + 1; k < n; k++) {
-                    if (matrix[i][j] < matrix[i][k]) {
+                for (int k = i + 1; k < n; k++) {
+                    if (matrix[i][j] < matrix[k][j]) {
                         tempElement = matrix[i][j];
-                        matrix[i][j] = matrix[i][k];
-                        matrix[i][k] = tempElement;
+                        matrix[i][j] = matrix[k][j];
+                        matrix[k][j] = tempElement;
 
                     }
                 }
             }
         }
-        System.out.println("Matrix rows were sorted in ascending order");
+        System.out.println("Matrix column were sorted in ascending order");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(matrix[i][j] + " ");
@@ -63,4 +63,3 @@ public class task12 {
         }
     }
 }
-
