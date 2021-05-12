@@ -34,6 +34,7 @@ public class task4 {
         }
         System.out.println();
         System.out.println(Arrays.toString(array));
+        System.out.println();
         System.out.println("number of permutations = "+count);
     }
 }
